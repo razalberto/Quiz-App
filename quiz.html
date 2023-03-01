@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+    <link rel="stylesheet" type="text/css" href="styles/quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer"></div>
+      <div class="question-info">
+        <div class="question-number"></div>
+        <div class="question"></div>
+      </div>
+      <fieldset id="answers" class="answer-info">
+        <input id="answerA" type="radio" name="answers" />
+        <label for="answerA" class="choice">.</label>
+        <input id="answerB" type="radio" name="answers" />
+        <label for="answerB" class="choice"></label>
+        <input id="answerC" type="radio" name="answers" />
+        <label for="answerC" class="choice">.</label>
+        <input id="answerD" type="radio" name="answers" />
+        <label for="answerD" class="choice"></label>
+      </fieldset>
+      <button
+        style="display: none"
+        class="resultsButton"
+        type="button"
+        onClick="seeResult()"
+      >
+        See Results
+      </button>
+      <button class="nextButton" type="button" onClick="nextQuestion()">
+        Next &gt;
+      </button>
+    </div>
+    <script src="scripts/quiz.js"></script>
+  </body>
+</html>
